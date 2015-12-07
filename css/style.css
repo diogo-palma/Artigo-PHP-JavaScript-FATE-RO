@@ -1,0 +1,273 @@
+body {
+	margin: 0 auto;
+ 	display: flex;
+ 	min-height: 100vh;
+ 	flex-direction: column;
+	
+  }
+
+
+
+.pagination li.active {
+    background-color: #CCC;
+}
+.pagination li {
+	margin: 0 2px;
+}
+
+td{ 
+		padding:7px; 
+		border:	#e0e0e0 10px solid;
+		/*background-color: #FFF;*/
+	}
+
+.collection .collection-item.avatar:hover{
+	background-color: #ccc !important;
+	
+}
+
+/* sugestoes */
+
+#result{
+	width:350px;
+	margin-top: -2px;
+	border-bottom-width: 0px;
+	color: #000;
+ 	position: absolute;
+ 	
+}
+#result a{
+	text-decoration:none;
+	text-transform:capitalize;
+	padding:5px;
+}
+
+.seleciona{
+	background-color: #EBF4FF;
+	    margin-top: -10px;
+}
+
+.seleciona:hover{
+	background-color: orange;
+}
+.suggest_link{
+	color: #000;
+	background-color:#fff;
+	
+}
+.small{
+	background-color:#fff;
+	
+}
+.suggest_link_over{
+	background-color:#fff;
+	
+}
+.suggest_link:hover{
+	background-color:#6d84b4;
+	
+}
+.suggest_link_over:hover{
+	background-color:#6d84b4;
+	
+}
+
+
+
+
+nav .nav-wrapper i {
+    display: -webkit-inline-box;
+	
+	
+}
+nav.blue {
+    height: 100px;   
+    
+    margin-top: 0 auto;
+}
+main {
+	 position: relative;
+    margin-top: -30px;
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+footer.page-footer {
+  margin-top: -30px;
+}
+.container{
+    width: 90%;   
+}
+
+
+#msg{
+    font: bold 100%/1.4 sans-serif;
+    color: brown;
+}
+
+nav .nav-wrapper i {
+   font-size: 1.5rem;
+    
+}
+
+.btn-floating {
+	    margin-right: 5px;
+}
+
+
+.anuncie {
+		    margin-top: inherit;
+			 position: static;
+	    margin-bottom: -22px;
+	
+}
+#conteudo {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.pesquisar{
+	
+}
+.login{
+
+	width: 400px;
+	
+}
+
+/* label color */
+   .input-field label {
+     color: grey;
+   }
+   /* label focus color */
+   .input-field input[type=email]:focus + label {
+     color: #000;
+   }   .input-field input[type=password]:focus + label {
+     color: #000;
+   }
+   /* label underline focus color */
+   .input-field input[type=email]:focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+	.input-field input[type=text]:focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+	.input-field input[type=textarea]:focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+	
+	.input-field input[type=password]:focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* valid color */
+   .input-field input[type=email].valid {
+     border-bottom: 1px solid green;
+     box-shadow: 0 1px 0 0 green;
+   }
+	.input-field input[type=text].valid {
+     border-bottom: 1px solid green;
+     box-shadow: 0 1px 0 0 green;
+   }
+	.input-field input[type=textarea].valid {
+     border-bottom: 1px solid green;
+     box-shadow: 0 1px 0 0 green;
+   }
+	.input-field input[type=password].valid {
+     border-bottom: 1px solid green;
+     box-shadow: 0 1px 0 0 green;
+   }
+   /* invalid color */
+   .input-field input[type=email].invalid {
+     border-bottom: 1px solid ##F44336 !important;
+     box-shadow: 0 1px 0 0 ##F44336 !important;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }
+
+#esconder{
+	display: none;
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+    font-size: 1.2rem;
+    color: #212121;
+    display: block;
+    padding: 1rem 1rem;
+}
+
+.thumbnail {
+    height: 100px;
+    margin: 10px;
+}
+#imagens {
+	background-color: #e3f2fd;
+	width: 100%;
+}
+.file-path{
+	display: none;
+	
+}
+
+.del{
+                margin-top: -19vh;
+                float: left;
+                margin-left: -16px;
+            }
+
+
+/*aspecto celular, tablet*/
+
+@media (-webkit-min-device-pixel-ratio: 1.5),  
+       (-o-min-device-pixel-ratio: 3/2),  
+       (min--moz-device-pixel-ratio: 1.5),  
+       (min-device-pixel-ratio: 1.5) {
+			 
+	#conteudo {
+		 width: 100%;
+		 height: 370px;
+		 position: relative;
+		 /*font-size: 50%;*/
+
+	}			
+ 	input{
+		width: 100%;
+		/*font-size: 50%;*/
+		line-height: 30px;
+	}
+ 	select{
+		width: 100%;
+		margin:  20px 0 0 0;
+		line-height: 40px;
+		display: block;
+	}
+	.card .card-title {
+		 color: #fff;
+		 font-size: 12px;
+		 font-weight: 300;
+	}
+ 	.card .card-content {
+		 /* padding: 20px; */
+		 margin: -10px;
+		 border-radius: 0 0 2px 2px;
+	}
+	.card .card-content .card-title {
+   	line-height: 0px;
+	}
+			 
+	.icon{
+		padding: 10px;	
+	}
+			 footer.page-footer {
+    margin-top: -56px;
+	 }	
+	 .collection .collection-item.avatar .title {
+    font-size: 14px;
+	 }
+			 
+ }

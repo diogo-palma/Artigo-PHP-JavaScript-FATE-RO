@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="fr"><head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Pagination</title>
+<style type="text/css">
+   p{margin:0;padding:0;}
+   .pge{display:none}
+   a{text-decoration:none;color:#909;font-weight:bold;}
+</style>
+</head>
+<body>
+The page ...
+<div id="mypages"></div>
+<script type="text/javascript">
+   function $(i){return document.getElementById(i)}
+// Your object record
+   var rcd=new Array();for (var i=0;i<42;i++) {rcd[i]={};rcd[i].id=42-i;rcd[i].fName='Smith'+rcd[i].id;}
+// Build "HTML pages" with numbers
+   var chnPge='';var npg;
+for (j=0;j<rcd.length;j++) {
+   if (j%15==0) {// new page
+      npg=Math.floor(j/15)+1;
+      chnPge+='<div id="pge'+npg.toString()+'" class="pge">';}
+   chnPge+='<p>'+rcd[j].fName+'</p>';// current ligne
+   if (j%15==14 || j+1==rcd.length) {// end of page or last record
+      var pr='&nbsp;&nbsp;&nbsp;';if (1<npg) pr='<p><a href="javascript:othPge(-1)">prev</a>';
+      var nx='<a href="javascript:othPge(1)">next</a></p>';if (j+1==rcd.length) nx='&nbsp;&nbsp;&nbsp;';
+     chnPge+=pr+' page '+npg+' '+nx+'</div>';}
+}
+// Edit and show the page 1
+$('mypages').innerHTML=chnPge;
+nosPge=1;$('pge'+nosPge).style.display='block';
+// Change page
+function othPge(n){var newPge=nosPge-(-n);
+   if (0<newPge && newPge<=npg){$('pge'+nosPge).style.display='none';
+      $('pge'+newPge).style.display='block';nosPge=newPge;}
+}
+</script>
+</body>
+</html>
